@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 .background {
   background-image: url(../img/dodge-inicio.jpg);
@@ -21,6 +21,7 @@
 }
 .header {
   display: flex;
+  justify-content: space-between;
   flex-flow: row nowrap;
 }
 .logo h1 {
@@ -33,8 +34,12 @@
   flex-flow: row nowrap;
   align-items: center;
   justify-content: start;
-  padding-left: 15%;
-  padding-right: 5%;
+}
+.contenedor-de-nav {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
 }
 .items-nav {
   display: flex;
@@ -211,17 +216,16 @@
 
 .main-historia {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 180px;
+gap: 10vw;
+  height: 85%;
 }
 .historia-y-qs {
   display: flex;
   flex-direction: row;
   background-color: white;
   width: 70%;
-  height: 100%;
   border: 2px solid black;
   border-radius: 20px;
   text-align: center;
@@ -230,6 +234,7 @@
   box-shadow: 10px 10px 50px black;
   padding: 5px;
   max-width: 40%;
+  min-width: 460px;
 }
 
 .fotos {
@@ -245,7 +250,7 @@
   border: 2px solid black;
 }
 /*Vista mobil*/
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .logo h1 {
     color: black;
     text-shadow: 2px 2px white;
@@ -287,9 +292,9 @@
     text-transform: uppercase;
   }
   .catalogo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   .main-pago {
     display: flex;
@@ -299,12 +304,11 @@
     margin-right: 10px;
     margin-bottom: 10px;
   }
-  .pago p{
+  .pago p {
     font-size: 40px;
   }
   .pago {
-  width: 350px;
-  height: 200px;
+    width: 350px;
+    height: 200px;
   }
-
 }
