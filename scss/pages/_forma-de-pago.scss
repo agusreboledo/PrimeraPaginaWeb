@@ -1,0 +1,34 @@
+.background-pago {
+    background-image: url(../img/forma-de-pago.jpg);
+    background-repeat: no-repeat;
+    background-position: 60% 40%;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .main-pago {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 50px;
+    margin-bottom: 80px;
+  }
+  .pago {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 400px;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 50px black;
+  }
+  .pago p {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  
