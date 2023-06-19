@@ -9,3 +9,14 @@ function verificarEdad() {
 }
 
 verificarEdad();
+function darBienvenida() {
+  let nombre = prompt("Por favor, ingresa tu nombre:");
+
+  while (!nombre) {
+    nombre = prompt("Por favor, ingresa tu nombre correctamente:");
+  }
+
+  alert("¡Bienvenido, " + nombre + "!");
+}
+
+darBienvenida();
