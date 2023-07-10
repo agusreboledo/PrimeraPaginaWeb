@@ -2,10 +2,16 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <script src="/js/sistema.js"></script>
+    <script src="/js/resenia.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="shortcut icon" href="../img/dodge-icon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="../img/dodge-icon.png"
+      type="image/x-icon"
+    />
     <title>Forma de pago</title>
   </head>
   <body>
@@ -37,9 +43,28 @@
         </div>
       </header>
       <main class="main-pago">
+        <form id="id-formulario">
+          <label for="id-nombre">Nombre:</label>
+          <input type="text" id="id-nombre" />
+          <label for="id-valoracion">Valoracion:</label>
+          <input type="text" id="id-valoracion" />
+          <label for="id-comentario">comentario:</label>
+          <textarea id="id-comentario" cols="30" rows="10"></textarea>
+          <button type="submit"id="enviar-Resenia">enviar</button>
+          
+        </form>
+        <div class="resenias">
+          <div class="resnia">
+            <p class="nombre"></p>
+            <p class="valoracion"></p>
+            <p class="comentario"></p>
+          </div>
+        </div>
         <div class="pago">
           <p>
-            Forma de pago: <br> Efectivo U$D <br> Transferencia U$D
+            Forma de pago: <br />
+            Efectivo U$D <br />
+            Transferencia U$D
           </p>
         </div>
       </main>
